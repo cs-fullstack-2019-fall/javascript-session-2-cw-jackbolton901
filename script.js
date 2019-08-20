@@ -44,22 +44,30 @@ class Calculator_class {
     add(first_number, second_number) {
         this.update_current_calculation_result(first_number + second_number);
         return this.current_calculation_result;
-    };
+    }
 
     // Subtracts the 2 numbers passed in and returns the result
     // It also updates the running total property
     subtract(first_number, second_number) {
         this.update_current_calculation_result(first_number - second_number);
         return this.current_calculation_result;
-    };
+
+    }
 
     // Multiplies the 2 numbers passed in and returns the result
     // It also updates the running total property
     // TODO: Student implement the method for multiplication
-   
+
+      multiply(first_number,second_number) {
+          this.update_current_calculation_result(first_number * second_number);
+          return this.current_calculation_result;
+      }
     // Divides the 2 numbers passed in and returns the result
     // It also updates the running total property
     // TODO: Student implement the method for division
+          divide(first_number, second_number){
+          this.update_current_calculation_result(first_number / second_number)}
+
 
 }
 
@@ -99,3 +107,4 @@ function main() {
 
 // Call Main function to start things up!
 main();
+
