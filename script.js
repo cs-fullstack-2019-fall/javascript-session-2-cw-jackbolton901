@@ -84,6 +84,9 @@ function main() {
 
     // TODO: Student implement functionality to keep asking the User for next math operation
     //  until they enter 'x' to exit
+
+// NOTE : No while loop?
+
     // Start by just displaying the current total
     console.log(`Total : ${calculator_instance.get_current_calculation_result()}`);
 
@@ -100,6 +103,8 @@ function main() {
     switch (current_operation) {
         case "ADD":
             alert(`New sum Total : ${calculator_instance.add(first_int, second_int)}`);
+
+            // NOTE : no functinality for the other three options
     }
     // Print the final calculation total in console for debugging purposes
     console.log(`Final Total : ${calculator_instance.get_current_calculation_result()}`);
